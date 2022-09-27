@@ -1,0 +1,47 @@
+{
+    "name": "cms_ml.transformations.frequency.envelopespectrum.envelopespectrum",
+    "primitive": "cms_ml.transformations.frequency.envelopespectrum.envelopespectrum",
+    "classifiers": {
+        "type": "transformation",
+        "subtype": "frequency"
+    },
+    "produce": {
+        "args": [
+            {
+                "name": "amplitude_values",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "sampling_frequency",
+                "type": "float"
+            }
+        ],
+        "output": [
+            {
+                "name": "amplitude_values",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "frequency_values",
+                "type": "numpy.ndarray"
+            }
+        ]
+    },
+    "hyperparameters": {
+        "fixed": {
+            "lowcut": {
+                "type": "float",
+                "default": null
+            },
+            "highcut": {
+                "type": "float",
+                "default": null
+            },
+            "order": {
+                "type": "int",
+                "default": 5
+            }
+        },
+        "tunable": {}
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "cms_ml.aggregations.amplitude.relay.relay_x_values",
+    "primitive": "cms_ml.aggregations.amplitude.relay.relay_x_values",
+    "classifiers": {
+        "type": "aggregation",
+        "subtype": "amplitude"
+    },
+    "produce": {
+        "args": [
+            {
+                "name": "amplitude_values",
+                "type": "numpy.ndarray"
+            },
+            {
+                "name": "x_values",
+                "type": "numpy.ndarray"
+            }
+        ],
+        "output": [
+            {
+                "name": "values",
+                "type": "numpy.ndarray"
+            }
+        ]
+    },
+    "hyperparameters": {
+        "fixed": {},
+        "tunable": {}
+    }
+}

@@ -1,0 +1,14 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.md
+include LICENSE
+include README.md
+
+recursive-include cms_ml/data *
+recursive-include cms_ml/primitives *
+recursive-include cms_ml/pipelines *
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.md *.rst conf.py Makefile make.bat *.jpg *.png *.gif
