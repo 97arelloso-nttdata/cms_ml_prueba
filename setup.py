@@ -16,7 +16,7 @@ install_requires = [
     'botocore==1.17.44',
     'matplotlib<3.2.2,>=2.2.2',
     'greenguard>=0.3.0,<0.4',
-    'mlprimitives>=0.3.2,<0.4 --no-dependencies lightfm',
+    'mlprimitives>=0.3.2,<0.4',
     'mlblocks>=0.4.1,<0.5',
     'pandas>=1,<2',
     'sigpro>=0.1.0,<0.2',
